@@ -46,6 +46,7 @@ color:black;
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html { scroll-behavior: smooth; }
+    
        /* ─── NOISE OVERLAY ─── */
     body::before {
       content: '';
@@ -55,7 +56,29 @@ color:black;
       pointer-events: none;
       z-index: 9999;
       opacity: 0.4;
-    }
+ <button onclick="document.body.classList.toggle('light')">
+🌙
+</button>
+
+<style>
+
+button{
+position:fixed;
+top:20px;
+right:20px;
+padding:10px;
+border:none;
+border-radius:50%;
+background:gold;
+cursor:pointer;
+}
+
+.light{
+background:white;
+color:black;
+}
+
+</style>   }
 <button id="themeToggle">☀</button>
    <script>
 
@@ -68,7 +91,6 @@ document.body.classList.toggle("light");
 
 };
 
-</script> 
     /* ─── SCROLLBAR ─── */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
@@ -86,7 +108,7 @@ document.body.classList.toggle("light");
       justify-content: space-between;
       background: rgba(10,10,15,0.7);
       backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+   </body> এর আগে এটা paste করো ✅   -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
       transition: background var(--transition);
     }

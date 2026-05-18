@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samita Roy — Portfolio</title>
+  <p class="typing"></p>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 
@@ -85,53 +86,9 @@ color:#333;
 
 <script>
 
-/* DARK LIGHT MODE */
-
-const toggle=document.getElementById("themeToggle");
-
-toggle.onclick=()=>{
-
-document.body.classList.toggle("light");
-
-if(document.body.classList.contains("light")){
-toggle.innerHTML="🌙";
-}else{
-toggle.innerHTML="☀";
-}
-
-};
-
-</script>
-<script>
-
-function createFlower(){
-
-const flower=document.createElement("div");
-
-flower.classList.add("flower");
-
-flower.innerHTML="🌸";
-
-flower.style.left=Math.random()*100+"vw";
-
-flower.style.animationDuration=
-3+Math.random()*5+"s";
-
-flower.style.fontSize=
-15+Math.random()*20+"px";
-
-document.body.appendChild(flower);
 
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    /* ─── NOISE OVERLAY ─── */
+     /* ─── NOISE OVERLAY ─── */
     body::before {
       content: '';
       position: fixed;
